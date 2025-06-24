@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 3</title>
+    <link rel="stylesheet" href='style.css' >
+</head>
+<body>
+
+  <header>
+    <ul class="nav-links">
+<li>
+    <li><a  href="chp1.html">Introduction</a></li>
+    <li><a  href="chp2.html">Product</a></li>
+    <li><a  href="chp3.html">Procurement</a></li>
+    <li><a  href="chp4.html">Manufacturing</a></li>
+    <li><a  href="chp5.html">Distribution</a></li>
+    <li><a  href="chp6.html">Transportation</a></li>
+    <li><a  href="chp7.html">Service</a></li>
+    <li><a  href="chp8.html">Demand</a></li>
+    <li><a  href="chp9.html">Forecast</a></li>
+    <li><a  href="chp10.html">Integration</a></li>
+    <li><a  href="chp11.html">Financial</a></li>
+    <li><a  href="chp12.html">Performance</a></li>
+</li>
+    </ul>
+  </header>
+
+  <main>
+  <div class="section">
+    <h2>Chapter 3: Procurement Decisions</h2>
+
+    <p>Your FLEX firm manages procurement by sourcing raw materials and sub-assembly components from suppliers. If postponed production is chosen, similar inventory management decisions are required at regional distribution centers where postponement occurs.</p>
+
+    <h3>Sub-Assembly Components and Warranty</h3>
+    <p>Sub-assembly components may fail in the field as customers use their products. Within the warranty period, replacement parts are provided at no cost. Each regional distribution center services the demand for replacement parts from its local region. If a regional distribution center does not exist, the demand is sourced from the distribution center adjacent to the manufacturing plant in market region 1.</p>
+
+    <h3>Emergency Procurement</h3>
+    <p>If the available inventory of any raw material or sub-assembly component is insufficient to meet production requirements, an emergency procurement order is automatically executed by the simulation software.</p>
+
+    <h3>Raw Materials</h3>
+    <ul>
+        <li><strong>Plastics and Casings:</strong> Widely available single-grade commodities purchased at worldwide spot-market prices.</li>
+        <li><strong>Transportation:</strong> Covered by suppliers, typically surface transportation.</li>
+        <li><strong>Delivery:</strong> Always within the current quarter.</li>
+        <li><strong>Current Prices:</strong> $3/kg for Plastics and $4/kg for Casings.</li>
+        <li><strong>Volume Discounts:</strong>
+            <ul>
+                <li>7.6% discount for procurements over 250,000 kg.</li>
+                <li>13.8% discount for procurements over 500,000 kg.</li>
+                <li>19.2% discount for procurements over 1,000,000 kg.</li>
+            </ul>
+        </li>
+        <li><strong>Emergency Orders:</strong> Incurs an additional $1/kg transportation charge.</li>
+    </ul>
+
+    <h3>Sub-Assembly Components and Supplier Decisions</h3>
+    <ul>
+        <li><strong>Products:</strong>
+            <ul>
+                <li><strong>Smart Home Assistant (SHA):</strong> Includes sub-assembly component Audio Module (AM).</li>
+                <li><strong>Smart Thermostat (ST):</strong> Includes sub-assembly component Control Interface (CI).</li>
+                <li><strong>Common Sub-assembly:</strong> Both products use the Motherboard sub-assembly component.</li>
+            </ul>
+        </li>
+        <li><strong>Suppliers:</strong>
+            <ul>
+                <li><strong>AM:</strong> Suppliers A, B, C, or D.</li>
+                <li><strong>CI:</strong> Suppliers B, C, D, E, or F.</li>
+                <li><strong>Motherboard:</strong> Suppliers D, E, F, or G.</li>
+            </ul>
+        </li>
+
+    <li><strong>Delivery:</strong>
+    <ul>
+        <li><strong>AM and CI:</strong> Available on the spot-market for immediate delivery.</li>
+        <li><strong>Motherboard:</strong> Delivered one quarter after ordering.</li>
+    </ul>
+
+    <li><strong>Transportation Costs:</strong>
+
+    <ul>
+        <li><strong>AM and CI Transportation:</strong> $3/unit (surface), $4/unit (air).</li>
+        <li><strong>Motherboard Transportation:</strong> $4/unit (surface), $6/unit (air).</li>
+        <li><strong>Emergency Orders:</strong> 50% higher than air transportation costs.</li>
+    </ul>
+
+    <li><strong>Volume Discounts</strong>
+    <ul>
+        <li>10.4% discount for procurements over 50,000 units.</li>
+        <li>17.5% discount for procurements over 100,000 units.</li>
+    </ul>
+    </ul>
+
+    <h3>Sub-Assembly Component Characteristics</h3>
+    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr style="background-color: #e0e0e0;">
+                <th>Supplier</th>
+                <th>Component</th>
+                <th>Cost</th>
+                <th>Delivery Rate</th>
+                <th>Failure Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Supplier A</td>
+                <td>AM</td>
+                <td>$12</td>
+                <td>80% ± 2%</td>
+                <td>2.0%</td>
+            </tr>
+            <tr>
+                <td>Supplier B</td>
+                <td>AM</td>
+                <td>$14</td>
+                <td>85% ± 4%</td>
+                <td>1.9%</td>
+            </tr>
+            <tr>
+                <td>Supplier C</td>
+                <td>AM</td>
+                <td>$13</td>
+                <td>85% ± 6%</td>
+                <td>2.0%</td>
+            </tr>
+            <tr>
+                <td>Supplier D</td>
+                <td>AM</td>
+                <td>$22</td>
+                <td>90% ± 8%</td>
+                <td>1.2%</td>
+            </tr>
+            <tr>
+                <td>Supplier B</td>
+                <td>CI</td>
+                <td>$15</td>
+                <td>75% ± 4%</td>
+                <td>2.6%</td>
+            </tr>
+            <tr>
+                <td>Supplier C</td>
+                <td>CI</td>
+                <td>$16</td>
+                <td>78% ± 6%</td>
+                <td>2.5%</td>
+            </tr>
+            <tr>
+                <td>Supplier D</td>
+                <td>CI</td>
+                <td>$24</td>
+                <td>80% ± 8%</td>
+                <td>1.8%</td>
+            </tr>
+            <tr>
+                <td>Supplier E</td>
+                <td>CI</td>
+                <td>$14</td>
+                <td>70% ± 10%</td>
+                <td>2.7%</td>
+            </tr>
+            <tr>
+                <td>Supplier F</td>
+                <td>CI</td>
+                <td>$13</td>
+                <td>70% ± 12%</td>
+                <td>2.8%</td>
+            </tr>
+            <tr>
+                <td>Supplier D</td>
+                <td>Motherboard</td>
+                <td>$29</td>
+                <td>80% ± 8%</td>
+                <td>1.1%</td>
+            </tr>
+            <tr>
+                <td>Supplier E</td>
+                <td>Motherboard</td>
+                <td>$20</td>
+                <td>75% ± 10%</td>
+                <td>1.7%</td>
+            </tr>
+            <tr>
+                <td>Supplier F</td>
+                <td>Motherboard</td>
+                <td>$19</td>
+                <td>77% ± 12%</td>
+                <td>1.8%</td>
+            </tr>
+            <tr>
+                <td>Supplier G</td>
+                <td>Motherboard</td>
+                <td>$21</td>
+                <td>78% ± 14%</td>
+                <td>1.7%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="section">
+    <h3>Inventory Management for Postponed Production</h3>
+    <p>FLEX firms produce complete smart home assistants and smart thermostats at their manufacturing plant and ship them through their regional distribution centers to customers. Alternatively, postponed production is possible by producing semi-finished products that can later be converted into either SHA or ST at the distribution center.</p>
+    <p>If your firm practices postponed production, sub-assembly components inventories must be managed at your regional distribution centers. If you are currently manufacturing completed products at your manufacturing plant, inventories of sub-assembly components also have to be managed at the manufacturing plant. The manufacturing plant shares inventories with your distribution center in market region 1.</p>
+    <p>Negative shipments of raw materials and sub-assembly components (returns to vendors) are not possible. Residual inventory is automatically disposed of when a distribution center is closed, converted to cash at current balance-sheet values, with a disposal cost of 20% of the inventory’s value. This cost is recorded under Consulting Fees on the firm's P&L statement.</p>
+</div>
+
+<div class="section">
+    <h3>Replacement Parts</h3>
+    <p>Sub-assembly components may fail in the field as customers use their products. Within the warranty period, replacement parts are provided at no cost. Each regional distribution center services demand for sub-assembly component replacement parts from the local region. If a regional distribution center does not exist, the demand is sourced from the distribution center adjacent to the manufacturing plant in market region 1. Your FLEX firm must maintain sufficient inventory of sub-assembly components to service replacement part demands.</p>
+</div>
+
+    <h3>Relationship Management Costs</h3>
+    <p>
+        Each relationship with a sub-assembly supplier incurs one-time start-up costs of <strong>$20,000</strong>, plus ongoing costs of <strong>$10,000</strong> in the initial quarter of procurement and <strong>$5,000</strong> in subsequent quarters as long as your firm continues to source sub-assembly components from a supplier. If you cease ordering sub-assembly components from a supplier and then start ordering again in a later quarter, these start-up costs are incurred again.
+    </p>
+    <p>
+        "Relationship" means one or more purchase orders processed with a sub-assembly component provider. Relationship management costs are recorded under <em>"Procurement FC"</em> on your financial statements.
+    </p>
+    <p>
+        Fixed order costs of <strong>$1,250</strong> accrue for every sub-assembly component procurement (via surface or air) from every supplier used in a quarter. These costs are also recorded under <em>"Procurement FC"</em> on your financial statements.
+    </p>
+    <p>
+        Ongoing relationships with sub-assembly component suppliers have the positive benefit of reducing the risk associated with spot-market unavailability in any given quarter. As an existing customer of a sub-assembly component supplier, your firm would receive preferential treatment with regard to any supply constraints. Thus, your firm would normally not face spot-market unavailability from your existing sub-assembly component suppliers.
+    </p>
+
+    <h3>SAC Surface Shipping</h3>
+    <p>
+        SAC surface shipping, a distribution decision variable in FLEX, refers to in-bound surface shipments of sub-assembly components to each DC.
+    </p>
+    <ul>
+        <li><strong>Expedited Surface Shipping (Level 3)</strong>: Increases delivery reliability by 10%-20%, costs 25% above the standard surface shipping cost.</li>
+        <li><strong>Standard Surface Shipping (Level 2)</strong>: The normal form of surface shipping for in-bound sub-assembly components to each DC. Standard surface delivery reliability parameters are specified in the table above.</li>
+        <li><strong>Economy Surface Shipping (Level 1)</strong>: Reduces shipping costs by 30%, decreases delivery reliability by 35%-40%.</li>
+    </ul>
+    <p>
+        Transportation costs are reported in the FLEX financial reports for standard surface shipping. Incremental adjustments in transportation costs for expedited surface shipping and economy surface shipping accrue as Transportation Rebates. Expedited surface shipments are reflected as negative Transportation Rebates while economy surface shipments are reflected as positive Transportation Rebates.
+    </p>
+
+
+</main>
+
+  <footer>
+    &copy; 2025 FLEX SCM Simulation | Designed by Vikram Sethi
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body { margin: 0; font-family: Arial, sans-serif; display: flex; min-height: 100vh; }
+nav {
+    width: 220px;
+    background:#ef1f1f;
+    color: white;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+nav a { display: block; color: white; text-decoration: none; margin-bottom: 0.5em; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+main { flex: 1; padding: 1em; background: #fdfdfd; }
+h2 { color: #ef1f1f; }
+ul { padding-left: 1.2em; }
+    

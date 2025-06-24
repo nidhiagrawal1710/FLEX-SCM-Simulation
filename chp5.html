@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 5</title>
+    <link rel="stylesheet" href='style.css' >
+</head>
+<body>
+
+  <header>
+    <ul class="nav-links">
+<li>
+    <li><a  href="chp1.html">Introduction</a></li>
+    <li><a  href="chp2.html">Product</a></li>
+    <li><a  href="chp3.html">Procurement</a></li>
+    <li><a  href="chp4.html">Manufacturing</a></li>
+    <li><a  href="chp5.html">Distribution</a></li>
+    <li><a  href="chp6.html">Transportation</a></li>
+    <li><a  href="chp7.html">Service</a></li>
+    <li><a  href="chp8.html">Demand</a></li>
+    <li><a  href="chp9.html">Forecast</a></li>
+    <li><a  href="chp10.html">Integration</a></li>
+    <li><a  href="chp11.html">Financial</a></li>
+    <li><a  href="chp12.html">Performance</a></li>
+</li>
+    </ul>
+  </header>
+
+  <main>
+
+
+<h2>Chapter 5: Distribution Decisions</h2>
+
+<h3>Overview</h3>
+<p>Distribution decisions in FLEX include determining whether to have distribution centers (DCs) in regions other than your home-base (Region 1) and, if so, deciding the form of those DCs (outsourced vs. owned).
+ For each region-specific DC, you also face decisions related to RFID application for products distributed through the retail channel (Channel #1), whether to enable cross-docking with one or more carriers, and surface shipping methods for
+  finished goods inventory shipped from DC1 to other DCs and for inbound surface shipments of sub-assembly components to each DC.</p>
+
+
+<p>Even if you choose not to have a distribution center in a market region other than Region 1, 
+you can still have sales in that market region if you choose to have products in active distribution in any channel in that market region. 
+Such sales would be serviced directly from your Region 1 DC.</p>
+
+<p>Retailers require your products to be equipped with RFID (radio-frequency identification). RFID is applied to your outbound products at your distribution centers. Only products distributed to the retail channel (Channel #1) require RFID application. At each distribution center, you may use outsourced or insourced RFID application.</p>
+<p>With cross-docking enabled at a DC, inventory holding costs and DC operating costs are reduced because inbound shipments are directly transferred to outbound carriers with reduced regional-DC handling, warehousing, and administration. Cross-docking is possible at all regional DCs (i.e., at third-party and owned regional DCs) other than DC1.</p>
+<p>Surface shipping methods provide three levels of surface shipping for finished goods shipments from DC1 to other DCs and for inbound surface shipments of sub-assembly components to each DC. Surface shipping methods include expedited, standard, and economy surface shipping with associated consequences for surface shipping delivery reliability and cost.</p>
+
+
+<h3>Distribution Center Decisions</h3>
+
+<p>
+  While you must always have an owned DC in Region 1, you may or may not wish to have DCs in other regions. 
+  If you choose not to have a distribution center in a market region other than Region 1, sales in that market region 
+  would be serviced directly from your Region 1 DC.
+</p>
+
+<p>If you have a distribution center in a market region:</p>
+<ul>
+  <li>
+    Replacement parts demand is fulfilled from that regional DC, requiring inventories of sub-assembly components 
+    to be maintained at those regional DCs.
+  </li>
+  <li>
+    Postponed production is possible with owned "local" region distribution centers, requiring inventorying of 
+    sub-assembly components at that regional DC.
+  </li>
+  <li>
+    When a regional distribution center opens, there will be no inventory of the Motherboard sub-assembly component 
+    available at that DC for the first quarter. All first-quarter usage of the Motherboard will be on an emergency 
+    basis, with consequent first-quarter emergency ordering costs.
+  </li>
+  <li>
+    Transportation of finished goods to customers from a regional DC is via surface transportation. Otherwise, air 
+    transportation is required to ship finished goods from the distribution center in Region 1 to customers in other 
+    regions without a local distribution center.
+  </li>
+</ul>
+
+<p>Three distribution center decision options exist in regions other than Region 1:</p>
+<ol>
+  <li>
+    <strong>Decision Option "0" (no distribution center):</strong> No distribution center costs exist.
+  </li>
+  <li>
+    <strong>Decision Option "1" (outsourced third-party distribution center):</strong> Involves outsourcing your regional 
+    distribution center to a reputable partner in a region. This option includes one-time costs of $100,000 to open, 
+    $50,000 in one-time costs to close, $50,000 in quarterly costs, and inventory charges of 5% based on the inventory value.
+  </li>
+  <li>
+    <strong>Decision Option "2" (operate owned distribution center):</strong> Involves one-time costs of $250,000 to open, 
+    $150,000 in one-time costs to close, $25,000 in quarterly costs, and inventory charges of 3% based on the inventory value.
+  </li>
+</ol>
+
+<p>
+  Your firm can only have one DC in a region. The DC status code “2” denotes an owned DC in a region, not two DCs in that region. 
+  DC openings and conversions (from outsourced to owned or vice versa) occur at the start of the next quarter. 
+  Existing inventory is automatically transferred to the new DC form. The FLEX software automatically disposes of residual 
+  inventory of sub-assembly components and finished goods when a DC is closed. The inventory is converted to cash at the 
+  current balance-sheet values and a corresponding disposal cost of 20% of the inventory's value accrues.
+</p>
+
+
+
+
+<h3>RFID Application for Retail-Channel Sales</h3>
+
+<p>
+  Retailers now require that your products be equipped with RFID. RFID is applied to your outbound products at your distribution centers. 
+  Only products distributed to the retail channel (Channel #1) require RFID application.
+</p>
+
+<p>At each distribution center, you have two choices for RFID application:</p>
+<ol>
+  <li>
+    <strong>Decision Option 0 (outsourced RFID application):</strong> Adds $11 in variable costs to all products sold through the retail channel.
+  </li>
+  <li>
+    <strong>Decision Option 1 (insourced RFID application):</strong> Requires a one-time investment of $350,000, reducing variable costs to $1 per product 
+    sold through the retail channel. This investment is recorded under "Consulting Fees" on your corporate profit-and-loss statement. 
+    RFID insourcing is only possible if you already have or simultaneously open a DC in a region.
+  </li>
+</ol>
+
+<p>
+  Your RFID decision is specific to each distribution center. Thus, you may choose to insource at some DCs and outsource at others.
+</p>
+
+<h3>Emergency Carriers for Plant-to-DC Shipments</h3>
+
+<p>
+  You must choose an emergency carrier for each of your DCs (other than DC1). This emergency carrier is used for plant-to-DC transportation 
+  shipments required on an emergency basis.
+</p>
+
+<h3>Cross-Docking</h3>
+
+<p>
+  Cross-docking reduces inventory holding costs and DC operating costs by directly transferring inbound shipments to outbound carriers 
+  with reduced handling, warehousing, and administration. Cross-docking is possible at all regional DCs (other than DC1) with carriers K, L, M, and N.
+</p>
+
+<h3>Costs and Benefits:</h3>
+<ul>
+  <li><strong>One-time fixed costs:</strong> $7,500 per carrier.</li>
+  <li><strong>Ongoing (quarterly) maintenance costs:</strong> $2,500 per carrier.</li>
+  <li><strong>Reduced inventory charges:</strong> 0.5% reduction, with a maximum inventory valuation of $5,000,000.</li>
+  <li><strong>Reduced quarterly DC operating costs:</strong> $1,000 per carrier enabled at a regional DC other than DC1.</li>
+</ul>
+
+<p>
+  Cross-docking costs on the “Corporate P&amp;L Statement” reflect the net costs (positive or negative) associated with cross-docking, 
+  including the reduction in finished goods inventory charges associated with cross-docked shipments.
+</p>
+
+<p>
+  At each distribution center (other than DC1), you have two choices for cross-docking with carriers K, L, M, and N:
+</p>
+<ol>
+  <li><strong>Decision Option 0:</strong> No cross-docking exists.</li>
+  <li><strong>Decision Option 1:</strong> Cross-docking is enabled with a specific carrier.</li>
+</ol>
+
+<p>
+  Cross-docking involves inbound shipments from DC1 to another DC. If there are no inbound shipments to a DC via a carrier with 
+  cross-docking enabled in a particular quarter, there are no cross-docking cost savings for that carrier in that quarter.
+</p>
+
+
+
+
+
+<p></p>
+
+<h3>Surface shipping methods</h3>
+<p>Surface shipping methods provide three levels of surface shipping for finished goods shipments from DC1 to other DCs and for inbound surface shipments of sub-assembly components to each DC. These methods include expedited, standard, and economy surface shipping with associated consequences for delivery reliability and cost.</p>
+
+
+
+
+<h3>Finished Goods Inventory (FGI)</h3>
+<p>Specific to each DC (other than DC1) and applies to all carriers' surface shipments of finished goods from DC1 to that DC. Details are provided in Chapter 7 (Transportation Decisions).</p>
+
+<h3>Sub-Assembly Components (SAC)</h3>
+<p>Provides three levels of surface shipping for inbound sub-assembly components to each DC. Details are provided in Chapter 4 (Procurement Decisions).</p>
+
+</main>
+
+  <footer>
+    &copy; 2025 FLEX SCM Simulation | Designed by Vikram Sethi
+  </footer>
+
+</body>
+</html>

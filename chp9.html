@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 9</title>
+    <link rel="stylesheet" href='style.css' >
+</head>
+<body>
+
+  <header>
+    <ul class="nav-links">
+<li>
+    <li><a  href="chp1.html">Introduction</a></li>
+    <li><a  href="chp2.html">Product</a></li>
+    <li><a  href="chp3.html">Procurement</a></li>
+    <li><a  href="chp4.html">Manufacturing</a></li>
+    <li><a  href="chp5.html">Distribution</a></li>
+    <li><a  href="chp6.html">Transportation</a></li>
+    <li><a  href="chp7.html">Service</a></li>
+    <li><a  href="chp8.html">Demand</a></li>
+    <li><a  href="chp9.html">Forecast</a></li>
+    <li><a  href="chp10.html">Integration</a></li>
+    <li><a  href="chp11.html">Financial</a></li>
+    <li><a  href="chp12.html">Performance</a></li>
+</li>
+    </ul>
+  </header>
+
+  <main>
+
+<h2>Chapter 9: Forecasting Decisions</h2>
+
+<p>
+  Good forecasts are important. In FLEX, quarterly sales volume forecasts are required for retail and direct channel sales 
+  in each region for each of your products. While explicit recorded replacement parts forecasts are not required, you will 
+  need to forecast replacement parts demand to manage your inventories of sub-assemblies.
+</p>
+
+<h3>Impact of Forecasting Accuracy</h3>
+
+<p>
+  Accurate forecasting is critical for managing administrative overhead costs. For every 1% inaccuracy in your sales volume 
+  forecasts, administrative overhead costs increase by 1%. For example, a forecast error of 10% (whether positive or negative) 
+  for a product in a region increases the administrative overhead costs for that product in that region by 10%.
+</p>
+
+<ul>
+  <li><strong>Maximum Penalty:</strong> The maximum administrative overhead penalty associated with sales forecasting 
+      inaccuracy for each product in each region is a doubling of administrative overhead.</li>
+  <li><strong>Forecast Error Costs:</strong> Forecast error costs are recorded as “Forecast Inaccuracy” costs on your firm’s 
+      profit-and-loss statements. The reported base administrative overhead costs are always $80,000/quarter and 
+      $120,000/quarter per product in channels 1 and 2, respectively, in all market regions.</li>
+</ul>
+
+<p>
+  Sales volume forecasting decisions are independent of your procurement and production decisions. Sales volume forecasting 
+  decisions are your best estimates of customer demand. However, your actual procurement and production decisions will be 
+  based on additional factors, such as fixed order costs and target inventory levels.
+</p>
+
+<h3>Forecasting Accuracy Calculation</h3>
+
+<p>
+  Forecasting accuracy is one of the components of the multi-factor FLEX performance evaluation scorecard described in 
+  Chapter 15. Forecasting accuracy influences operating performance both directly (via adjustments in base administrative 
+  overhead for forecasting inaccuracies) and indirectly (via inventory pipeline inefficiencies [too much or too little inventory]).
+</p>
+
+<ul>
+  <li>
+    <strong>Forecasting Accuracy Formula:</strong><br>
+    <code>
+     Forecasting Accuracy=100×(1−∣Forecast−Actual∣Actual)\text{Forecasting Accuracy} = 100 \times \left(1 - \frac{|\text{Forecast} - \text{Actual}|}{\text{Actual}}\right)Forecasting Accuracy=100×(1−Actual∣Forecast−Actual∣)
+    </code>
+  </li>
+  <li>
+    <strong>Example:</strong> A forecast value of 11,000 and an actual value of 8,000 results in a forecasting accuracy of:<br>
+    <code>
+     100×(1−∣11,000−8,000∣8,000)=100×(1−3,0008,000)=100×(1−0.375)=62.5%100 \times \left(1 - \frac{|11,000 - 8,000|}{8,000}\right) = 100 \times \left(1 - \frac{3,000}{8,000}\right) = 100 \times (1 - 0.375) = 62.5\%100×(1−8,000∣11,000−8,000∣)=100×(1−8,0003,000)=100×(1−0.375)=62.5%
+    </code>
+  </li>
+</ul>
+
+<p>
+  The minimum possible value of forecasting accuracy is 0.0%. For example, with an actual sales volume of 8,000, 
+  a forecast above 16,000 results in a forecasting accuracy score of 0.0%.
+</p>
+
+
+</main>
+
+  <footer>
+    &copy; 2025 FLEX SCM Simulation | Designed by Vikram Sethi
+  </footer>
+
+</body>
+</html>

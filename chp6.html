@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 6</title>
+    <link rel="stylesheet" href='style.css' >
+</head>
+<body>
+
+  <header>
+    <ul class="nav-links">
+<li>
+    <li><a  href="chp1.html">Introduction</a></li>
+    <li><a  href="chp2.html">Product</a></li>
+    <li><a  href="chp3.html">Procurement</a></li>
+    <li><a  href="chp4.html">Manufacturing</a></li>
+    <li><a  href="chp5.html">Distribution</a></li>
+    <li><a  href="chp6.html">Transportation</a></li>
+    <li><a  href="chp7.html">Service</a></li>
+    <li><a  href="chp8.html">Demand</a></li>
+    <li><a  href="chp9.html">Forecast</a></li>
+    <li><a  href="chp10.html">Integration</a></li>
+    <li><a  href="chp11.html">Financial</a></li>
+    <li><a  href="chp12.html">Performance</a></li>
+</li>
+    </ul>
+  </header>
+
+  <main>
+
+<h2>Chapter 6: Transportation Decisions</h2>
+<h3>Overview</h3>
+<p>The FLEX transportation decisions include choosing transportation modes (surface and air) for inbound sub-assembly components and selecting transportation modes and carriers for finished goods shipments from your plant to your distribution centers (DCs).</p>
+<ul>
+    <li><strong>Surface Transportation:</strong> Less expensive but less reliable than air transportation.</li>
+    <li><strong>Air Transportation:</strong> More expensive but offers 100% delivery reliability within the current quarter.Air Transportation: More expensive but offers 100% delivery reliability within the current quarter.</li>
+</ul>
+
+<p>For regions other than Region 1, transportation decisions are required to ship your products to regional DCs. You make shipment volume decisions across two possible transportation modes (surface and air) and six possible carriers (I, J, K, L, M, and N). Carriers offer a 20% rebate on the current quarter's transportation charges if they are used exclusively.</p>
+<p>You must also choose an emergency carrier for each of your DCs (other than DC1) for emergency shipments.</p>
+
+
+
+<h3>Transportation Responsibilities</h3>
+<p>Different kinds of transportation decisions are required in different parts of your supply chain:</p>
+<ul>
+<li><strong>Inbound Raw Materials:</strong> Vendors provide inbound transportation as part of their bundled prices. No decisions required.</li>
+<li><strong>Inbound Sub-Assembly Components:</strong> Joint responsibility between suppliers and manufacturers. Suppliers quote unbundled component and transportation mode costs. Manufacturers choose modes; suppliers arrange carriers.</li>
+<li><strong>Plant-to-DC Shipments:</strong> Manufacturers are responsible for transportation decisions related to within-firm shipments of postponed production and finished goods from plants to DCs.</li>
+<li><strong>DC Shipments to Customers:</strong> Ship by surface from within-region DCs or by air from DC1 if no local DC exists. No active decisions required.</li>
+</ul>
+
+
+<h3>Plant-to-DC Shipments</h3>
+<p>The regional DC in Region 1 is located adjacent to your manufacturing plant, so there are no transportation costs for shipments to DC1. For other regions, transportation decisions are required. You make shipment volume decisions across surface and air transportation modes and carriers I, J, K, L, M, and N.</p>
+<p>Based on past experience, air transportation ensures 100% delivery reliability within the current quarter, while surface transportation averages about 70% delivery reliability. Current transportation costs per unit between your plant and regional DCs for all carriers are shown in Exhibit 9.</p>
+
+
+
+<h3>Plant-to-DC Transportation Shipments</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Carrier</th>
+      <th>Market Region 1<br>Cost</th>
+      <th>Market Region 2<br>Delivery</th>
+      <th>Market Region 3<br>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Carrier I, Surface</td>
+      <td>$6</td>
+      <td>70% ± 4%</td>
+      <td>$10</td>
+    </tr>
+    <tr>
+      <td>Carrier I, Air</td>
+      <td>$8</td>
+      <td>100%</td>
+      <td>$14</td>
+    </tr>
+    <tr>
+      <td>Carrier J, Surface</td>
+      <td>$4</td>
+      <td>40% ± 8%</td>
+      <td>$4</td>
+    </tr>
+    <tr>
+      <td>Carrier J, Air</td>
+      <td>$10</td>
+      <td>100%</td>
+      <td>$14</td>
+    </tr>
+    <tr>
+      <td>Carrier K, Surface</td>
+      <td>$6</td>
+      <td>70% ± 12%</td>
+      <td>$6</td>
+    </tr>
+    <tr>
+      <td>Carrier K, Air</td>
+      <td>$8</td>
+      <td>100%</td>
+      <td>$14</td>
+    </tr>
+    <tr>
+      <td>Carrier L, Surface</td>
+      <td>$8</td>
+      <td>75% ± 4%</td>
+      <td>$6</td>
+    </tr>
+    <tr>
+      <td>Carrier L, Air</td>
+      <td>$10</td>
+      <td>100%</td>
+      <td>$14</td>
+    </tr>
+    <tr>
+      <td>Carrier M, Surface</td>
+      <td>$6</td>
+      <td>65% ± 8%</td>
+      <td>$8</td>
+    </tr>
+    <tr>
+      <td>Carrier M, Air</td>
+      <td>$8</td>
+      <td>100%</td>
+      <td>$16</td>
+    </tr>
+    <tr>
+      <td>Carrier N, Surface</td>
+      <td>$10</td>
+      <td>82% ± 12%</td>
+      <td>$12</td>
+    </tr>
+    <tr>
+      <td>Carrier N, Air</td>
+      <td>$12</td>
+      <td>100%</td>
+      <td>$18</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Customer Shipment Transportation Costs (Per Unit)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Market Region &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      <th>Within-Region Surface Transportation Costs<br>Channel 1</th>
+      <th>Sourcing from Plant/DC1 with No Within-Region DC<br>Channel 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Market Region 1</td>
+      <td>$4</td>
+      <td>$8</td>
+    </tr>
+    <tr>
+      <td>Market Region 2</td>
+      <td>$6</td>
+      <td>$12</td>
+    </tr>
+    <tr>
+      <td>Market Region 3</td>
+      <td>$8</td>
+      <td>$16</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p>Outbound Shipments combine the data from Exhibits 9 and 10 to determine total transportation costs for any choice of plant-to-DC carrier.</p>
+
+<h3>Sample Plant-DC-Customer Total Transportation Costs</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Region   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+      <th>Channel 1 "Local" DC</th>
+      <th>Channel 1 Air Sourced from Plant/DC1</th>
+      <th>Channel 2 "Local" DC</th>
+      <th>Channel 2 Air Sourced from Plant/DC1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Region 1</td>
+      <td>$4</td>
+      <td>-</td>
+      <td>$8</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Region 2</td>
+      <td>$6 + $6 = $12</td>
+      <td>$8 + $6 = $14</td>
+      <td>$6 + $12 = $18</td>
+      <td>$8 + $12 = $20</td>
+    </tr>
+    <tr>
+      <td>Region 3</td>
+      <td>$10 + $8 = $18</td>
+      <td>$14 + $8 = $22</td>
+      <td>$10 + $16 = $26</td>
+      <td>$14 + $16 = $30</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Emergency transportation shipments to a regional DC cost 50% more than the current air transportation 
+  costs of your designated regional emergency carrier.
+</p>
+
+<h3>FGI Surface Shipping</h3>
+
+<p>
+  FGI surface shipping is specific to each DC (other than DC1) and includes three levels:
+</p>
+
+<ol>
+  <li>
+    <strong>Expedited Surface Shipping (Level 3):</strong> Increases surface shipping delivery reliability by 10%-20%, 
+    costs 25% above standard surface shipping cost.
+  </li>
+  <li>
+    <strong>Standard Surface Shipping (Level 2):</strong> The normal form of surface shipping for finished goods inventory 
+    from DC1 to other DCs.
+  </li>
+  <li>
+    <strong>Economy Surface Shipping (Level 1):</strong> Reduces shipping costs by 30%, decreases surface delivery 
+    reliability by 35%-40%.
+  </li>
+</ol>
+
+<p>
+  Transportation costs are reported in the FLEX financial reports for Standard Surface Shipping. Incremental adjustments 
+  for Expedited and Economy Surface Shipping accrue as Transportation Rebates.
+</p>
+
+<h3>Summary</h3>
+
+<p>
+  This chapter details the transportation decisions for which you are responsible in FLEX, including transportation mode 
+  choice (surface and air) for inbound sub-assembly components and transportation mode choice and carrier selection for 
+  finished goods shipments from your plant to your distribution centers (DCs). Making informed transportation decisions 
+  will help you manage costs and ensure reliable delivery performance throughout your supply chain.
+</p>
+
+
+</main>
+
+  <footer>
+    &copy; 2025 FLEX SCM Simulation | Designed by Vikram Sethi
+  </footer>
+
+</body>
+</html>

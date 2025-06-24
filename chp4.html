@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 4</title>
+    <link rel="stylesheet" href='style.css' >
+</head>
+<body>
+
+   <header>
+    <ul class="nav-links">
+<li>
+    <li><a  href="chp1.html">Introduction</a></li>
+    <li><a  href="chp2.html">Product</a></li>
+    <li><a  href="chp3.html">Procurement</a></li>
+    <li><a  href="chp4.html">Manufacturing</a></li>
+    <li><a  href="chp5.html">Distribution</a></li>
+    <li><a  href="chp6.html">Transportation</a></li>
+    <li><a  href="chp7.html">Service</a></li>
+    <li><a  href="chp8.html">Demand</a></li>
+    <li><a  href="chp9.html">Forecast</a></li>
+    <li><a  href="chp10.html">Integration</a></li>
+    <li><a  href="chp11.html">Financial</a></li>
+    <li><a  href="chp12.html">Performance</a></li>
+</li>
+    </ul>
+  </header>
+
+  <main><h2>Chapter 4: Manufacturing Decisions</h2>
+
+  <p>Your FLEX firm makes production decisions for each of your products each quarter. The FLEX production sub-process is build-to-plan (build-to-stock).</p>
+
+  <h3>Postponed Production</h3>
+  <p>
+    Postponed production involves creating a partially completed product, called a "SHELL," at your firm's manufacturing plant. Postponed production occurs at
+     your regional distribution centers and involves converting the SHELL into specific finished goods. With postponed production, the final product identity is assigned at the distribution center (DC),
+     not at the manufacturing plant. Postponed production has the potential to reduce demand-supply imbalances at distribution centers since not all products shipped to the distribution centers have to be completely finished.
+     SHELLS may be converted into either SHA or ST to meet local demand variations across your product line. Postponed production is only possible with an owned DC, not with a third-party DC.</p>
+
+  <h3>Emergency Production Limits</h3>
+  <p>
+   In addition to production decisions, you also control product-specific emergency production limits. If finished goods inventory is insufficient to meet end-user demand, an emergency production order is executed automatically up to the product's specified emergency production limit.   
+  </p>
+
+  <h3>Production Volume Flexibility</h3>
+  <p>
+   Production volume flexibility decisions permit you to exceed quarter-over-quarter production order change limits (maximum change of 10,000 units from the previous quarter’s production level).
+  </p>
+  <p>Unfilled orders can exist in your industry. If demand for any product exceeds the product’s emergency production limit, customer sales and scheduled product shipments to other DCs must be reduced proportionately by the amount that orders exceed the product’s emergency production limit.
+   The difference between potential customer sales (orders) and actual customer sales due to inadequate on-hand finished goods inventory (after accounting for a product's emergency production limit) is termed "unfilled orders" in FLEX. Unfilled orders are not backlogged orders and are not guaranteed future sales.
+   </p>
+  <p>Past experience in the products industry suggests that 8%-12% of sales result in returns, but this can be higher if unfilled orders exist.</p>
+  
+  <h3>Manufacturing Process & Decisions</h3>
+  <p>
+    Your FLEX firm makes production decisions for each of your products each quarter. These production volume decisions include both completed products and postponed production. In addition, you must decide on emergency production limits for each completed product each quarter.
+  </p>
+  <p>Postponed production involves creating a partially completed product, referenced as product "0," at your firm's manufacturing plant. Inventories of product "0" are tracked from your manufacturing plant to your distribution centers. Postponed production occurs at your regional distribution centers and involves converting product "0" into specific finished goods. Postponed production allows the final product identity to be assigned at the distribution center, reducing demand-supply imbalances
+  </p>
+  
+  <h3>Manufacturing and Postponed Production Costs</h3>
+  
+  <p>The costs associated with manufacturing and postponed production are described in Exhibit 6. DC-specific costs refer to the incremental production costs associated with converting postponed-production units into either SHA or ST completed products. There is a fixed cost per order associated with setting up each production run, whether at the manufacturing plant or for postponed production at any distribution center. In addition to these production-related costs, the implied costs associated with the configurations of the products are also added to the costs of the products.</p>
+  
+  <p>Production volumes for each product (including postponed production [product 0]) can change by a maximum of 10,000 units from the previous quarter's value. You may, however, change a product's production volume to 0 units at any time, but you'd then be limited to a maximum production volume of 10,000 units in the following quarter. This constraint is due to load balancing requirements associated with available plant capacity and labor force overtime scheduling requirements.</p>
+  
+  <p>In addition to the order-related fixed costs and the unit-related variable costs described below, your firm absorbs costs associated with depreciation and maintenance of your dedicated plant capacity to manufacture products. These costs are $100,000 per quarter for each production "shift," and they are recorded as "Plant Capacity FC" (plant capacity fixed costs) on your "Corporate Current P&L Statement." These costs are allocated equally among your products.</p>
+
+<h3>Manufacturing Costs (Per Unit)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Manufacturing Plant</th>
+      <th>DC1</th>
+      <th>DC2</th>
+      <th>DC3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Postponed Production -->
+    <tr>
+      <td colspan="5"><strong>Postponed Production</strong></td>
+    </tr>
+    <tr>
+      <td>Fixed Costs (per order)</td>
+      <td>$20,000</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Labor Costs (per unit)</td>
+      <td>$22</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Production Costs (per unit)</td>
+      <td>$11</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+
+    <!-- SHA -->
+    <tr>
+      <td colspan="5"><strong>SHA</strong></td>
+    </tr>
+    <tr>
+      <td>Fixed Costs (per order)</td>
+      <td>$22,500</td>
+      <td>$5,000</td>
+      <td>$5,000</td>
+      <td>$4,000</td>
+    </tr>
+    <tr>
+      <td>Labor Costs (per unit)</td>
+      <td>$30</td>
+      <td>$14</td>
+      <td>$15</td>
+      <td>$12</td>
+    </tr>
+    <tr>
+      <td>Production Costs (per unit)</td>
+      <td>$20</td>
+      <td>$12</td>
+      <td>$14</td>
+      <td>$11</td>
+    </tr>
+
+    <!-- ST -->
+    <tr>
+      <td colspan="5"><strong>ST</strong></td>
+    </tr>
+    <tr>
+      <td>Fixed Costs (per order)</td>
+      <td>$24,500</td>
+      <td>$6,000</td>
+      <td>$8,000</td>
+      <td>$5,000</td>
+    </tr>
+    <tr>
+      <td>Labor Costs (per unit)</td>
+      <td>$36</td>
+      <td>$16</td>
+      <td>$20</td>
+      <td>$15</td>
+    </tr>
+    <tr>
+      <td>Production Costs (per unit)</td>
+      <td>$16</td>
+      <td>$10</td>
+      <td>$12</td>
+      <td>$10</td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-style: italic;">Note: DC-specific "Postponed Production" costs are incremental, above and beyond "Postponed Production" costs recorded in the "Manufacturing Plant" column. For example, the total fixed costs (per order) associated with postponed production for SHA completed at DC1 are $20,000 + $5,000 = $25,000.</p>
+  <h3>Emergency Production</h3>
+  <p>
+    In addition to production decisions, you also control product-specific emergency production limits, which are a maximum of 10,000 units per product. If end-user demand exceeds available inventory plus postponed production inventory (SHELLS) plus your emergency production limit, additional end-user demand becomes unfilled orders.
+     There is a $2/unit [$3/unit] cost for standby charges associated with all emergency production limits for SHA [ST] products. These standby charges are levied regardless of whether you actually use the specified emergency production limits during a quarter. Emergency production costs are recorded under "Emergency Production" on the "Corporate P&L Statement."
+  </p>
+  <p>If finished goods inventory is insufficient to meet end-user demand, an emergency production order is executed automatically up to the product's specified emergency production limit:</p>
+<ul>
+    <li><p><strong>Access Postponed Production Inventory:</strong> If you have available postponed production inventory at a regional distribution center, it is automatically accessed to cover emergency production requirements. Postponed production inventory accessed for emergency production purposes has no additional labor and production costs other than those described in Exhibit 6.
+     If no inventory of postponed production is available at your distribution center, then your finished goods inventory at your manufacturing plant (distribution center in market region 1) is accessed. Air shipment is always used for such emergency inventory situations, with a 50% premium above normal air shipment rates.</p></li>
+    <li><p><strong>Execute Emergency Production:</strong> If your distribution center in market region 1 has no available finished goods inventory, an emergency production order is executed at your manufacturing plant. Emergency production orders have an associated 50% cost premium (i.e., labor and production costs are 50% higher than standard) for emergency production volumes up to the product's specified emergency production limit. For emergency production exceeding 5,000 units, the premiums are 100% above standard rates. Emergency production finished goods inventory is shipped via air at a 50% premium above normal air shipment rates.</p></li>
+</ul>
+
+<p>You have complete control over whether to use emergency production for any product. If you set a product's emergency production limit to 0, then either postponed production would be invoked (if product 0 inventory is available) or unfilled orders would result. You'll need to assess the trade-offs between emergency production and unfilled orders.</p>
+<p>Emergency production orders might also necessitate emergency raw materials or sub-assembly component orders if there is insufficient available on-hand inventory at your manufacturing plant. Thus, the overall cost impact of emergency production orders can extend beyond just the emergency production order costs highlighted above.</p>
+  <h3>Production Volume Flexibility</h3>
+  <p>Each product’s production order volume may not change by more than 10,000 units from the previous quarter’s production order volume for that product. Larger changes must be phased in over successive quarters. However, a change to 0 units of production order volume for a product is always possible, but the following quarter’s production for that product would be limited to a maximum of 10,000 units.
+  </p>
+<p>You may enhance your firm’s manufacturing technology to provide greater production volume flexibility, with associated costs detailed below:</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Incremental Production Order Volume Flexibility</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 to 2,500 Units</td>
+      <td>$2/unit</td>
+    </tr>
+    <tr>
+      <td>2,501 to 5,000 Units</td>
+      <td>$5,000 plus $4/unit over 2,500 units</td>
+    </tr>
+    <tr>
+      <td>5,001 to 7,500 Units</td>
+      <td>$15,000 plus $6/unit over 5,000 units</td>
+    </tr>
+    <tr>
+      <td>7,501 to 10,000 Units</td>
+      <td>$30,000 plus $8/unit over 7,500 units</td>
+    </tr>
+    <tr>
+      <td>10,001 to 12,500 Units</td>
+      <td>$50,000 plus $10/unit over 10,000 units</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<p>In addition to these costs, any change in a product’s production volume flexibility costs $10,000 in one-time fixed costs. These costs are recorded as “Production FC” on your Corporate P&L Statement.</p>
+<p>“Incremental production order volume flexibility” refers to the extra flexibility in a product’s production volume change limit from quarter to quarter, beyond the standard allotment of 10,000 units for each product. For example, suppose that you select 4,200 units of incremental production order volume flexibility for a product. Then, that product’s production volume could change by a maximum of 14,200 units (10,000 units from the standard allotment plus 4,200 in [optional] incremental production volume flexibility) from the previous month’s production volume for that product. </p>
+<p>Production volume flexibility is specific to each product. Thus, you may provide for some incremental production volume flexibility (over the standard allotment of 10,000 units) for one product but not for others. Incremental production volume flexibility is possible for product 0, like all other products.</p>
+
+</body>
+
+</html>
+
+
+
+</main>
+
+  <footer>
+    &copy; 2025 FLEX SCM Simulation | Designed by Vikram Sethi
+  </footer>
+
+</body>
+</html>
