@@ -1,35 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Chapter 1: Introduction</title>
-    <link rel="stylesheet" href='style.css' >
-    <link rel="stylesheet" href='summary.css' >
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLEX SCM Simulation</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f7f8fa, #e3e9f0);
+      color: #333;
+    }
+
+    nav {
+      background-color: #ef1f1f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #ef1f1f;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .chapter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .chapter-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .chapter-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+    }
+
+    .chapter-card a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #ef1f1f;
+      font-size: 1.1rem;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      padding: 1rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="chp1.html"><strong>Full Manual</strong></a>
-        <a href="Glossary.html"><strong>Glossary</strong></a>
-    </nav>
-    
-    <main>
-    <ol>
-        <li><a href="chapter_1_summary.html"><strong>Chapter 1 Summary</strong></a></li>
-        <li><a href="chapter_2_summary.html"><strong>Chapter 2 Summary</strong></a></li>
-        <li><a href="chapter_3_summary.html"><strong>Chapter 3 Summary</strong></a></li>
-        <li><a href="chapter_4_summary.html"><strong>Chapter 4 Summary</strong></a></li>
-        <li><a href="chapter_5_summary.html"><strong>Chapter 5 Summary</strong></a></li>
-        <li><a href="chapter_6_summary.html"><strong>Chapter 6 Summary</strong></a></li>
-        <li><a href="chapter_7_summary.html"><strong>Chapter 7 Summary</strong></a></li>
-        <li><a href="chapter_8_summary.html"><strong>Chapter 8 Summary</strong></a></li>
-        <li><a href="chapter_9_summary.html"><strong>Chapter 9 Summary</strong></a></li>
-        <li><a href="chapter_10_summary.html"><strong>Chapter 10 Summary</strong></a></li>
-        <li><a href="chapter_11_summary.html"><strong>Chapter 11 Summary</strong></a></li>
-        <li><a href="chapter_12_summary.html"><strong>Chapter 12 Summary</strong></a></li>
-    </ol>
-    </main>
-    
+
+  <nav>
+    <div><strong>Manual Dashboard</strong></div>
+    <div>
+      <a href="chp1.html">Full Manual</a>
+      <a href="Glossary.html">Glossary</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Welcome to the FLEX Manual </h1>
+    <p>Explore key concepts across each chapter of your supply chain management manual</p>
+  </header>
+
+  <section class="chapter-grid">
+    <div class="chapter-card"><a href="chapter_1_summary.html">Introduction</a></div>
+    <div class="chapter-card"><a href="chapter_2_summary.html">Product</a></div>
+    <div class="chapter-card"><a href="chapter_3_summary.html">Procurement</a></div>
+    <div class="chapter-card"><a href="chapter_4_summary.html">Manufacturing</a></div>
+    <div class="chapter-card"><a href="chapter_5_summary.html">Distribution</a></div>
+    <div class="chapter-card"><a href="chapter_6_summary.html">Transportation</a></div>
+    <div class="chapter-card"><a href="chapter_7_summary.html">Service</a></div>
+    <div class="chapter-card"><a href="chapter_8_summary.html">Demand</a></div>
+    <div class="chapter-card"><a href="chapter_9_summary.html">Forecast</a></div>
+    <div class="chapter-card"><a href="chapter_10_summary.html">Integration</a></div>
+    <div class="chapter-card"><a href="chapter_11_summary.html">Financial</a></div>
+    <div class="chapter-card"><a href="chapter_12_summary.html">Performance</a></div>
+  </section>
+
+  <footer>
+    &copy; 2025 Manual Summary Portal | Designed by Vikram Sethi
+  </footer>
 </body>
 </html>
